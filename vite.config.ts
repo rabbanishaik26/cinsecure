@@ -4,7 +4,8 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: '/cinsecure/',   // 👈 important for GitHub Pages
   build: {
-    outDir: "docs", // 👈 build goes directly to docs/
-  }
+    outDir: "docs",      // 👈 build output to docs/
+  },
 })
