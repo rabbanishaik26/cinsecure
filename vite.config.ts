@@ -1,10 +1,8 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite"
+import react from "@vitejs/plugin-react"
 
 export default defineConfig({
   plugins: [react()],
-  base: '/',    // ✅ use root for custom domains
-  build: {
-    outDir: "docs",
-  },
+  base: "/",           // root for custom domain
+  build: { outDir: "docs" }
 })
